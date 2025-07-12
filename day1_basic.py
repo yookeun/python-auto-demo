@@ -24,8 +24,9 @@ def basic_browser_cotrol():
     
     # 1. chrome 드라이버 자동 설치 및 설정 
     print("1. Chrome 드라이버 설정 중...")
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
+    #service = Service(ChromeDriverManager().install())
+    #driver = webdriver.Chrome(service=service)
+    driver = webdriver.Chrome()
     
     try:        
         # 2. 브라우저 창 크기 조절 
